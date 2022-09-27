@@ -87,3 +87,6 @@ p {
 .icons .icon{
     color: aliceblue;
 }
+.aviso{
+    text-decoration: underline;
+}
