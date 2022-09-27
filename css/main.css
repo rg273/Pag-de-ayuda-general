@@ -7,9 +7,9 @@ body{
 }
 
 video {
-    position: sticky;
+    position: fixed;
     left: 0;
-    top: 100px;
+    top: 20px;
     width: 100%;
     z-index: -2;
   }
@@ -17,7 +17,6 @@ video {
 header nav{
     width: 100%;
     height: 100px;
-    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,9 +24,9 @@ header nav{
 .nav-subrayado {
     width: 70%;
     color: red;
-    border: solid tomato;
+    border: 4px double gray;
     margin: 0 auto;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     border-radius: 4px;
 }
 .nav-logo-container{
@@ -54,5 +53,37 @@ nav .coding-logo{
 nav .nav-title h1{
     font-size: 30px;
     text-align: center;
+    text-decoration: underline;
+}
+/*HEADER Y VIDEO TERMINADOS*/
 
+.info-container{
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-radius: 5px;
+    height: min-content;
+    width: 80%;
+    margin: 30px auto;
+    padding: 0px 20px;
+}
+p {
+     margin: 0 ;
+}
+/*CONTENEDOR INFO TEMR*/
+
+.container-info-title{
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: chocolate;
+}
+.comando-git{
+    color: burlywood;
+    font-weight: 900;
+    font-size: 21px;
+    margin: 14px 0px 0 ;
+}
+
+.icons .icon{
+    color: aliceblue;
 }
