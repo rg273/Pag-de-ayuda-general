@@ -43,14 +43,21 @@
         </section>
         <section class="info-container">
             <div>
+                <h3 class="container-info-title">Tener en cuenta los siguientes puntos para mejor compresion del contenido</h3>
+                <ol>
+                    <ul>La indicacion de 7 pasos que se muestran a continuacion solo sirven para lograr nuestra primer subida de repositorio al Github </ul>
+                    <ul>La indicacion de 7 pasos parten de la base en que ya tenes creada una carpeta(vacia) en tu computadora y una carpeta(vacia) en tu Github, 2 sencillos pasos</ul>
+                </ol>
+            </div>
+            <div>
                 <h3 class="container-info-title">Configuraciones</h3>
                 <strong>
-                    <p class="comando-git">git config --global user.email:</p>
+                    <p class="comando-git">git config --global user.email</p>
                 </strong> cambia de manera global el email del usuario, seguidamente
                 ponemos entre comillas nuestro nombre.<br>
                 <br>
                 <strong>
-                    <p class="comando-git">git config --list:</p>
+                    <p class="comando-git">git config --list</p>
                 </strong> muestra configuraciones de git también podemos usar  --show-origin inhales nos muestra las
                 configuraciones guardadas y su ubicación.<br>
                 <br>
@@ -59,38 +66,36 @@
             <div>
                 <h3 class="container-info-title">Comandos Basicos (Git del dia a dia de un programador)</h3>
                 <strong>
-                    <p class="comando-git">1° git init:</p>
+                    <p class="comando-git">1° git init</p>
                 </strong> lo usamos para determinar la carpeta en la que vamos a trabajar.<br>
                 <br>
                 <strong>
-                    <p class="comando-git">git status:</p>
+                    <p class="comando-git">git status</p>
                 </strong> lo usamos para saber si tenemos un archivo añadido o borrado en nuestro
                 proyecto, para saber en la rama en la que estamos y si tenemos commits.<br>
                 <br>
                 <strong>
-                    <p class="comando-git">4° git add:</p>
-                </strong> es para añadir un archivo a nuestra rama seguidamente ponemos entre comillas el
-                nombre de nuestro archivo o poner un punto para añadir todos los archios de nuestra carpeta.<br>
+                    <p class="comando-git">4° git add .</p>
+                </strong> es para añadir todos los archivos  que tengan cambios a nuestra rama o remplazar el punto por el nombre de nuestro archivo, por ejemplo:<br>
+                <ul>git add ArchivoEjemplo.js</ul>
                 <br>
                 <strong>
-                    <p class="comando-git">git rm:</p>
+                    <p class="comando-git">git rm</p>
                 </strong> lo usamos para borrar un archivo que hayamos añadido, <strong> eliminarlo por
                     completo de nuestra rama usamos git rm --cached.</strong><br>
                 <br>
                 <strong>
-                    <p class="comando-git">5° git commit:</p>
-                </strong> se usa para añadir un commit a nuestra rama, también podemos ponerle un -m
-                seguidamente ponemos entre comillas nuestro ensaje.<br>
+                    <p class="comando-git">5° git commit -m "Aca_Debe_Ir_Nuestro_Mensaje"</p>
+                </strong> se usa para añadir un mensaje a nuestra rama. Esto nos es util para avisar a los otros programadores los cambios que acabamos de hacer a los archivos rama<br>
                 <br><strong>
-                    <p class="comando-git">git log:</p>
-                </strong> se usa para ver la historia de nuestros archivos, los commits, el usuario que lo
-                cambió, cuando se realizaron los cambios etc. seguidamente ponemos el nombre de nuestro archivo.</p>
+                    <p class="comando-git">git log</p>
+                </strong> se usa para ver la historia de nuestros archivos, los commits, el usuario que hizo los cambios al archivo, cuando se realizaron los cambios etc.</p>
                 <br>
             </div>
             <div>
                 <h3 class="container-info-title">Fusionar ramas en local</h2>
                     <strong>
-                        <p class="comando-git">git merge (nombre rama):</p>
+                        <p class="comando-git">git merge (nombre rama)</p>
                     </strong>Fusiona una rama (nombre_rama) con la actual(rama que
                     nos encotramos posicionado)<br>
                     <br>
@@ -102,19 +107,18 @@
             </div>
             <div>
                 <h3 class="container-info-title">Comandos que van para repo local y remoto</h3>
-                <p class="comando-git">2° git remote add origin (ssh o https):</p> se usa para conectar el repo remoto con
-                nuestro
-                repo local(carpeta a la que hicimos git init).
-                <p class="comando-git">3°(opcional) git remote -v:</p> se usa para para ver las conexiones existentes que hay con el
+                <p class="comando-git">2° git remote add origin (ssh o https)</p> se usa para conectar el repositorio remoto con
+                nuestro repositorio local(carpeta a la que le aplicamos el git init).
+                <p class="comando-git">3°(opcional) git remote -v</p> se usa para ver las conexiones existentes que hay con el
                 repo
                 remoto.
-                <p class="comando-git">git remote remove origin:</p>
-                <p> Se usa para eliminar una conexion con el Repo Remoto.</p>
-                <p class="comando-git">7° git <strong class="push">push </strong>origin main:</strong></p> se usa
+                <p class="comando-git">git remote remove origin</p>
+                <p> Se usa para eliminar una conexion con el repositorio remoto.</p>
+                <p class="comando-git">7° git <strong class="push">push </strong>origin main</strong></p> se usa
                 para enviar los cambios commiteados al github.
-                <p class="comando-git">6° git <strong class="pull">pull </strong> origin main:</strong></p>
+                <p class="comando-git">6°(opcional) git <strong class="pull">pull </strong> origin main</strong></p>
                 descarga los cambios del repo remoto y los fuciona a (main) del local.
-                <p class="comando-git">git pull origin main --allow-unrelated-histories:</p> Obliga a fucionar la rama
+                <p class="comando-git">git pull origin main --allow-unrelated-histories</p> Obliga a fucionar la rama
                 de
                 origin (main) del repo REMOTO con la actual (con la rama en la que estemos posicionados del local)
             </div>
